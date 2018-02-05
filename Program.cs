@@ -19,22 +19,6 @@ namespace CRMService
 {
     class Program
     {
-        //static void Main(string[] args)
-        //{
-
-            
-
-
-
-        //    // Get the CRM connection string and connect to the CRM Organization
-        //    CrmServiceClient crmConn = new CrmServiceClient(ConfigurationManager.ConnectionStrings["CRM"].ConnectionString);
-        //    IOrganizationService crmService = crmConn.OrganizationServiceProxy;
-
-        //    Entity acc = new Entity("account");
-        //    acc["name"] = "Joe's New Account";
-        //    crmService.Create(acc);
-        //}
-
         static IOrganizationService _service;
         static void Main(string[] args)
         {
@@ -61,11 +45,8 @@ namespace CRMService
 
 
 
-            ConnectToMSCRM("arunav@rbhyd12345678.onmicrosoft.com", "Qwerty@123", "https://rbhyd12345678.crm11.dynamics.com/XRMServices/2011/Organization.svc");
-            //Guid userid = ((WhoAmIResponse)_service.Execute(new WhoAmIRequest())).UserId;
-
-            //OrganizationRequest req = new OrganizationRequest("new_ReturnOutputParamAsEntityCollection");
-            //OrganizationResponse res = _service.Execute(req);
+            ConnectToMSCRM("yourusername.onmicrosoft.com", "YourPassword", "organizationurl/XRMServices/2011/Organization.svc");
+           
 
             Entity Account = new Entity("account");
             Account["name"] = name;
