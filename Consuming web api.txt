@@ -6,3 +6,5 @@ Scenario
 2.On save of account call the action in javascript.
 
 3.After that the code in the plugin will trigger and create a new account record
+
+4.Register in postoperation and in the message select the name of custom action.
