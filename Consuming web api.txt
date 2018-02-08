@@ -1,0 +1,8 @@
+Scenario
+
+
+1.create an account record
+
+2.On save of account call the action in javascript.
+
+3.After that the code in the plugin will trigger and create a new account record
